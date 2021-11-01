@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bob Smith - Portfolio</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/variables.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<header>
+			<nav class="nav">
+				<img class="nav__logo" src="assets/logo.svg" alt="Shoot logo" />
+				<img
+					class="nav__close-hamburger-menu hidden"
+					src="assets/mobile/Hamburger menu close.svg"
+					alt="Close menu"
+				/>
+				<img
+					class="nav__hamburger-menu"
+					src="assets/mobile/Hamburger menu.svg"
+					alt="nav menu"
+				/>
+
+				<ul class="nav__menu hidden">
+					<li class="nav__menu-item">
+						<a class="nav__menu-item--current" href="#home">HOME</a>
+					</li>
+					<li class="nav__menu-item nav__menu-item">
+						<a class="nav__menu-item-link" href="pages/gallery">GALLERY</a>
+					</li>
+					<li class="nav__menu-item">
+						<a class="nav__menu-item-link" href="pages/about-me">ABOUT ME</a>
+					</li>
+					<li class="nav__menu-item">
+						<a class="nav__menu-item-link" href="pages/contact">CONTACT</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="main main--padding">
+			<figure
+				class="
+					main__hero-image-container main__hero-image-container--spacing-top
+				"
+			>
+				<img
+					class="main__hero-image--size"
+					src="assets/mobile/photos/Landing page hero-collage.png"
+					alt="Collage of photographs"
+				/>
+			</figure>
+
+			<section class="main__content">
+				<h1
+					class="
+						main__content-header
+						main__content-header--text-size
+						main__content-header--spacing
+					"
+				>
+					BOB SMITH
+				</h1>
+				<p class="main__content-subheader main__content-subheader--text-size">
+					Sick ass photographer
+				</p>
+				<a class="main__content-primary-button" href="pages/gallery.html"
+					>See My Work</a
+				>
+				<a class="main__content-secondary-button" href="pages/contact-me.html"
+					>Contact Me</a
+				>
+				<a class="main__content-about-me-link" href="pages/about-me.html"
+					>About Me</a
+				>
+			</section>
+		</main>
+		<script defer src="js/app.js"></script>
+	</body>
+</html>
