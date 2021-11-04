@@ -11,50 +11,103 @@
 	</head>
 	<body>
 		<header>
-			<nav class="nav">
-				<img class="nav__logo" src="assets/logo.svg" alt="Shoot logo" />
+			<nav
+				class="
+					nav
+					nav--background-color
+					nav--position
+					nav--flex
+					nav--size
+					nav--padding
+				"
+			>
 				<img
-					class="nav__close-hamburger-menu hidden"
+					class="nav__logo nav__logo--padding"
+					src="assets/logo.svg"
+					alt="Shoot logo"
+				/>
+				<img
+					class="
+						nav__close-hamburger-menu
+						nav__close-hamburger-menu--pointer
+						nav__close-hamburger-menu--position
+						hidden
+					"
 					src="assets/mobile/Hamburger menu close.svg"
 					alt="Close menu"
 				/>
 				<img
-					class="nav__hamburger-menu"
+					class="nav__hamburger-menu nav__hamburger-menu--pointer"
 					src="assets/mobile/Hamburger menu.svg"
 					alt="nav menu"
 				/>
 
-				<ul class="nav__menu hidden">
+				<ul
+					class="
+						nav__menu
+						nav__menu--position
+						nav__menu--flex
+						nav__menu--size
+						nav__menu--text
+						nav__menu--padding
+						nav__menu--spacing
+						hidden
+					"
+				>
 					<li class="nav__menu-item">
-						<a class="nav__menu-item--current" href="#home">HOME</a>
-					</li>
-					<li class="nav__menu-item nav__menu-item">
-						<a class="nav__menu-item-link" href="pages/gallery">GALLERY</a>
-					</li>
-					<li class="nav__menu-item">
-						<a class="nav__menu-item-link" href="pages/about-me">ABOUT ME</a>
+						<a
+							class="nav__menu-item-link--current nav__menu-item-link--text"
+							href="#home"
+							>HOME</a
+						>
 					</li>
 					<li class="nav__menu-item">
-						<a class="nav__menu-item-link" href="pages/contact">CONTACT</a>
+						<a
+							class="nav__menu-item-link nav__menu-item-link--text"
+							href="pages/gallery"
+							>GALLERY</a
+						>
+					</li>
+					<li class="nav__menu-item">
+						<a
+							class="nav__menu-item-link nav__menu-item-link--text"
+							href="pages/about-me"
+							>ABOUT ME</a
+						>
+					</li>
+					<li class="nav__menu-item">
+						<a
+							class="nav__menu-item-link nav__menu-item-link--text"
+							href="pages/contact"
+							>CONTACT</a
+						>
 					</li>
 				</ul>
 			</nav>
 		</header>
 
-		<main class="main main--padding">
-			<figure
-				class="
-					main__hero-image-container main__hero-image-container--spacing-top
-				"
-			>
+		<main class="main main--padding main--spacing main--flex">
+			<figure class="main__hero-image-container">
 				<img
 					class="main__hero-image--size"
-					src="assets/mobile/photos/Landing page hero-collage.png"
-					alt="Collage of photographs"
+					srcset="
+						./assets/mobile/photos/landing-page-hero.png 455w,
+						assets/desktop/landing-page-hero.png         837w
+					"
+					sizes="(max-width: 800px) 455px, 837px"
+					src="./assets/desktop/landing-page-hero.png"
+					alt="collage of images"
 				/>
 			</figure>
 
-			<section class="main__content">
+			<section
+				class="
+					main__content
+					main__content--spacing
+					main__content--flex
+					main__content--size
+				"
+			>
 				<h1
 					class="
 						main__content-header
@@ -64,16 +117,37 @@
 				>
 					BOB SMITH
 				</h1>
-				<p class="main__content-subheader main__content-subheader--text-size">
+				<p
+					class="
+						main__content-subheader
+						main__content-subheader--text-size
+						main__content-subheader--spacing
+					"
+				>
 					Sick ass photographer
 				</p>
-				<a class="main__content-primary-button" href="pages/gallery.html"
+				<a
+					class="
+						main__content-button--shared-styles main__content-primary-button
+					"
+					href="pages/gallery.html"
 					>See My Work</a
 				>
-				<a class="main__content-secondary-button" href="pages/contact-me.html"
+				<a
+					class="
+						main__content-button--shared-styles main__content-secondary-button
+					"
+					href="pages/contact-me.html"
 					>Contact Me</a
 				>
-				<a class="main__content-about-me-link" href="pages/about-me.html"
+				<a
+					class="
+						main__content-about-me-link
+						main__content-about-me-link--decoration
+						main__content-about-me-link--spacing
+						main__content-about-me-link--center-text
+					"
+					href="pages/about-me.html"
 					>About Me</a
 				>
 			</section>
