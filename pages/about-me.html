@@ -87,8 +87,39 @@
 			</ul>
 		</nav>
 	</header>
-	<main>
-		
+	<main class="about-me">
+		<figure class="about-me__figure">
+			<img class="about-me__figure--image"
+						srcset="
+						../assets/mobile/photos/about-me-portrait-mobile.png 288w,
+						../assets/desktop/about-me-portrait-desktop.png       574w
+						"
+						sizes="(max-width: 992px) 255px, 607px"
+						src="../assets/mobile/photos/about-me-portrait-mobile.png" alt="Portrait of Bob Smith holding a camera">
+		</figure>
+
+		<div class="about-me__right-section">
+			<article class="about-me__article">
+				<h1 class="about-me__article--header">About Bob Smith</h1>
+				<p class="about-me__article--paragraph">
+					Bobs journey is of a personal nature, her work explores sick ass photography.
+				</p>
+			
+				<p class="about-me__article--paragraph">
+					Her main photographic focus is self-portraiture, starting out simply through curiosity. Capturing self-portraits has become a major part of her life & work; it has enabled her to overcome anxiety and fears over life & mortality. Using the photographic practice as a calming mechanism, and a form of escapism.
+				</p>
+				<p class="about-me__article--paragraph">
+					Bob works predominantly with analog and instant cameras. Her process involves her in every stage of development making Leannes work deeply personal. The aesthetic of shooting film plays a major part within her work, exploiting the use of soft focus, colour casts, as well as the apparent dust and scratches that appear on her negatives. These are all a part of the process and a part of the documentation of her identity, and her surroundings.
+				</p>
+			</article>
+			
+			
+				<div class="about-me__buttons-container">
+					<a class="about-me__button about-me__button--primary" href="./gallery.html">See My Work</a>
+					<a class="about-me__button about-me__button--secondary" href="mailto:dummyportfolioemail@bobsmith.com">Contact Me</a>
+				</div>
+		</div>
+			
 	</main>
 	<script src="../js/app.js"></script>
 </body>

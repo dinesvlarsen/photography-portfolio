@@ -84,8 +84,6 @@
 
 .button-container__button {
 	display: inline-block;
-	background-color: black;
-	color: white;
 	width: 161px;
 	max-width: 310px;
 	padding: 0.8em 2em;
@@ -114,7 +112,6 @@
 
 .button-container__button--primary:active {
 	background-color: var(--button-primary-background-active);
-	
 }
 
 .button-container__button--secondary:active {
@@ -130,13 +127,11 @@
 .button-container__button--primary:hover {
 	background-color: var(--button-primary-background-hover);
 	color: var(--button-primary-color-hover);
-	
 }
 
 .button-container__button--secondary:hover {
 	background-color: var(--button-secondary-background-hover);
 	color: var(button-secondary-color-hover);
-	
 }
 
 @media only screen and (min-width: 1000px) {

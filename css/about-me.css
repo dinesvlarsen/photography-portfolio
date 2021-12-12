@@ -1,0 +1,131 @@
+.about-me {
+	margin: 6rem auto;
+	background-color: #f5f5f5;
+}
+
+.about-me__figure--image {
+	display: block;
+	margin: 0 auto;
+	border-radius: 2px;
+}
+
+.about-me__article {
+	padding: 2rem;
+}
+
+.about-me__article--header {
+	font-size: 1.5rem;
+	font-weight: 500;
+	margin-bottom: 0.5rem;
+	text-align: center;
+}
+
+.about-me__article--paragraph {
+	color: #2B2B2B;
+	font-weight: 300;
+	line-height: 166.2%;
+	max-width: 65ch;
+	margin: 0 auto 1rem auto;
+}
+
+.about-me__buttons-container {
+	max-width: 65ch;
+	margin: 0 auto;
+}
+
+.about-me__button {
+	display: block;
+	max-width: 161px;
+	margin-left: 2rem;
+	text-align: center;
+	padding: 0.8em 2em;
+	border-radius: 2px;
+}
+
+.about-me__button--primary {
+	background-color: var(--button-primary-background);
+	color: var(--button-primary-color);
+}
+
+.about-me__button--secondary {
+	background-color: var(--button-secondary-background);
+	color: var(--button-secondary-color);
+	box-shadow: inset 0px 0px 0px 2px #080808;
+	margin-top: 1rem;
+}
+
+.about-me__button:active {
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25), inset 0px 1px 3px rgba(0, 0, 0, 0.25);
+}
+
+.about-me__button--primary:active {
+	background-color: var(--button-primary-background-active);
+}
+
+.about-me__button--secondary:active {
+	background-color: var(--button-secondary-background-active);
+	box-shadow: inset 0px 0px 0px 2px #080808;
+}
+
+.about-me__button:hover {
+	text-decoration: underline;
+}
+
+.about-me__button--primary:hover {
+	background-color: var(--button-primary-background-hover);
+	color: var(--button-primary-color-hover);
+}
+
+.about-me__button--secondary:hover {
+	background-color: var(--button-secondary-background-hover);
+	color: var(button-secondary-color-hover);
+}
+
+@media only screen and (min-width: 640px) {
+	.about-me__button {
+		margin-left: 0;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.about-me {
+		display: flex;
+		max-width: 1440px;
+		margin: 8rem auto;
+		padding: 0 32px;
+	}
+
+	.about-me__figure--image {
+		width: 100%;
+		height: auto;
+		margin: 0;
+		display: inline-block;
+	}
+
+	.about-me__article {
+		padding-top: 0;
+	}
+
+	.about-me__article--header {
+		font-size: 3rem;
+		text-align:initial;
+	}
+
+	.about-me__article--paragraph {
+		font-size: 1.2rem;
+	}
+	.about-me__buttons-container {
+		margin-left: 2rem;
+		font-size: 1.2rem;
+	}
+
+	.about-me__button {
+		max-width: 280px;
+	}
+}
+
+@media only screen and (min-width: 1311px) {
+	.about-me {
+		gap: 5rem;
+	}
+}
