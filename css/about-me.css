@@ -83,7 +83,7 @@
 }
 
 @media only screen and (min-width: 640px) {
-	.about-me__button {
+	.about-me__buttons {
 		margin-left: 0;
 	}
 }
@@ -120,7 +120,7 @@
 		font-size: 1.2rem;
 	}
 
-	.about-me__button {
+	.about-me__buttons {
 		max-width: 280px;
 	}
 }
