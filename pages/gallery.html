@@ -1,267 +1,365 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Gallery</title>
-	<link rel="stylesheet" href="../css/reset.css">
-	<link rel="stylesheet" href="../css/variables.css">
-	<link rel="stylesheet" href="../css/style.css">
-	<link rel="stylesheet" href="../css/gallery.css">
-</head>
-<body>
-	<header>
-		<nav
-			class="
-				nav
-				nav--background-color
-				nav--position
-				nav--flex
-				nav--size
-				nav--padding
-			"
-		>
-		<a href="../index.html">
-			<img
-				class="nav__logo nav__logo--padding"
-				src="../assets/logo.svg"
-				alt="Shoot logo"
-			/>
-		</a>
-			<img
-				class="
-					nav__close-hamburger-menu
-					nav__close-hamburger-menu--pointer
-					nav__close-hamburger-menu--position
-					hidden
-				"
-				src="../assets/mobile/Hamburger menu close.svg"
-				alt="Close menu"
-			/>
-			<img
-				class="nav__hamburger-menu nav__hamburger-menu--pointer"
-				src="../assets/mobile/Hamburger menu.svg"
-				alt="nav menu"
-			/>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Gallery</title>
+		<link rel="stylesheet" href="../css/reset.css" />
+		<link rel="stylesheet" href="../css/variables.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/gallery.css" />
+	</head>
+	<body>
+		<header>
+			<nav class="nav">
+				<a href="../index.html">
+					<img class="nav__logo" src="../assets/logo.svg" alt="Shoot logo" />
+				</a>
+				<img
+					aria-label="Close Navigation"
+					class="nav__close-hamburger-menu hidden"
+					src="../assets/mobile/Hamburger menu close.svg"
+					alt="Close menu"
+				/>
+				<img
+					aria-label="Open Navigation"
+					class="nav__hamburger-menu"
+					src="../assets/mobile/Hamburger menu.svg"
+					alt="nav menu"
+				/>
 
-			<ul
-				class="
-					nav__menu
-					nav__menu--position
-					nav__menu--flex
-					nav__menu--size
-					nav__menu--text
-					nav__menu--padding
-					nav__menu--spacing
-					hidden
-				"
-			>
-				<li class="nav__menu-item">
-					<a
-						class="nav__menu-item-link nav__menu-item-link--text"
-						href="../index.html"
-						>HOME</a
-					>
-				</li>
-				<li class="nav__menu-item">
-					<a class="nav__menu-item-link--current nav__menu-item-link--text"
-						href="#gallery">
-						GALLERY
+				<ul class="nav__menu hidden">
+					<li class="nav__menu-item">
+						<a class="nav__menu-item--link" href="../index.html">HOME</a>
+					</li>
+
+					<li class="nav__menu-item">
+						<a
+							class="nav__menu-item--link nav__menu-item--current-link"
+							href="#gallery"
+						>
+							GALLERY
 						</a>
-				</li>
-				<li class="nav__menu-item">
-					<a
-						class="nav__menu-item-link nav__menu-item-link--text"
-						href="../pages/about-me.html"
-						>ABOUT ME</a
-					>
-				</li>
-				<li class="nav__menu-item">
-					<a
-						class="nav__menu-item-link nav__menu-item-link--text"
-						href="mailto:dummyportfolioemail@bobsmith.com"
-						>CONTACT</a
-					>
-				</li>
-			</ul>
-		</nav>
-	</header>
+					</li>
 
-	<main class="gallery">
-		<!-- <h1 class="gallery__header">Gallery</h1> -->
+					<li class="nav__menu-item">
+						<a class="nav__menu-item--link" href="../pages/about-me.html"
+							>ABOUT ME</a
+						>
+					</li>
 
-		<div class="gallery__display-wrapper">
-			<div class="gallery__display">
-				<div class="image-container">
-					<img src="../assets/gallery/portfolio-clip.svg" alt="" class="image-container__picture-clip">
-					<figure class="image-container__image">
-						<img class=image-container__image--image
-						srcset="
-						../assets/gallery/Portfolio-photographs-mobile/photography-picture01.jpg 198w,
-						../assets/gallery/Portfolio-photographs-desktop/photography-picture01.jpg        381w
-					"
-					sizes="(max-width: 1000px) 198px, 381px"
-						src="../assets/gallery/Portfolio-photographs-mobile/photography-picture01.jpg" alt="Statue of a lady holding her chest and stomach">
-						<figcaption class="hidden-caption image-container__image--caption">
-							<span>
-								Lady statue taken in Italy 06.08.2008
-							</span>
+					<li class="nav__menu-item">
+						<a
+							aria-label="Contact by e-mail"
+							class="nav__menu-item--link"
+							href="mailto:dummyportfolioemail@bobsmith.com"
+							>CONTACT</a
+						>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<main class="gallery">
+			<!-- <h1 class="gallery__header">Gallery</h1> -->
+
+			<div class="gallery__display-wrapper">
+				<div class="gallery__display">
+					<div class="image-container">
+						<img
+							src="../assets/gallery/portfolio-clip.svg"
+							alt=""
+							class="image-container__picture-clip"
+						/>
+						<figure class="image-container__image">
+							<img
+								class="image-container__image--image"
+								srcset="
+									../assets/gallery/Portfolio-photographs-mobile/photography-picture01.jpg  198w,
+									../assets/gallery/Portfolio-photographs-desktop/photography-picture01.jpg 381w
+								"
+								sizes="(max-width: 1000px) 198px, 381px"
+								src="../assets/gallery/Portfolio-photographs-mobile/photography-picture01.jpg"
+								alt="Statue of a lady holding her chest and stomach"
+							/>
+							<figcaption
+								class="hidden-caption image-container__image--caption"
+							>
+								<span> Lady statue taken in Italy 06.08.2008 </span>
 							</figcaption>
-					</figure>
-				</div>
+						</figure>
+					</div>
 
-				<div class="image-container">
-					<img src="../assets/gallery/portfolio-clip.svg" alt="" class="image-container__picture-clip">
-					<figure class="image-container__image">
-						<img class=image-container__image--image
-						srcset="
-						../assets/gallery/Portfolio-photographs-mobile/photography-picture02.jpg 198w,
-						../assets/gallery/Portfolio-photographs-desktop/photography-picture02.jpg        381w
-						"
-						sizes="(max-width: 1000px) 198px, 381px"
-						src="../assets/gallery/Portfolio-photographs-mobile/photography-picture02.jpg" alt="Statue portraying an angel and lady embracing eachother">
-						<figcaption class="hidden-caption image-container__image--caption">Angel statue taken in Italy 06.08.2008</figcaption>
-					</figure>
-				</div>
+					<div class="image-container">
+						<img
+							src="../assets/gallery/portfolio-clip.svg"
+							alt=""
+							class="image-container__picture-clip"
+						/>
+						<figure class="image-container__image">
+							<img
+								class="image-container__image--image"
+								srcset="
+									../assets/gallery/Portfolio-photographs-mobile/photography-picture02.jpg  198w,
+									../assets/gallery/Portfolio-photographs-desktop/photography-picture02.jpg 381w
+								"
+								sizes="(max-width: 1000px) 198px, 381px"
+								src="../assets/gallery/Portfolio-photographs-mobile/photography-picture02.jpg"
+								alt="Statue portraying an angel and lady embracing eachother"
+							/>
+							<figcaption
+								class="hidden-caption image-container__image--caption"
+							>
+								Angel statue taken in Italy 06.08.2008
+							</figcaption>
+						</figure>
+					</div>
 
-				<div class="image-container">
-					<img src="../assets/gallery/portfolio-clip.svg" alt="" class="image-container__picture-clip--horizontal">
-					<figure class="image-container__image">
-						<img class=image-container__image--image
-						srcset="
-						../assets/gallery/Portfolio-photographs-mobile/photography-picture03.jpg 255w,
-						../assets/gallery/Portfolio-photographs-desktop/photography-picture03.jpg        607w
-						"
-						sizes="(max-width: 1000px) 255px, 607px"
-						src="../assets/gallery/Portfolio-photographs-mobile/photography-picture03.jpg" alt="Elephants drinking by a water pit">
-						<figcaption class="hidden-caption image-container__image--caption">Elephants by a water pit taken in Africa 12.09.2008</figcaption>
-					</figure>
-				</div>
+					<div class="image-container">
+						<img
+							src="../assets/gallery/portfolio-clip.svg"
+							alt=""
+							class="image-container__picture-clip--horizontal"
+						/>
+						<figure class="image-container__image">
+							<img
+								class="image-container__image--image"
+								srcset="
+									../assets/gallery/Portfolio-photographs-mobile/photography-picture03.jpg  255w,
+									../assets/gallery/Portfolio-photographs-desktop/photography-picture03.jpg 607w
+								"
+								sizes="(max-width: 1000px) 255px, 607px"
+								src="../assets/gallery/Portfolio-photographs-mobile/photography-picture03.jpg"
+								alt="Elephants drinking by a water pit"
+							/>
+							<figcaption
+								class="hidden-caption image-container__image--caption"
+							>
+								Elephants by a water pit taken in Africa 12.09.2008
+							</figcaption>
+						</figure>
+					</div>
 
-				<div class="image-container">
-					<img src="../assets/gallery/portfolio-clip.svg" alt="" class="image-container__picture-clip">
-					<figure class="image-container__image">
-						<img class=image-container__image--image
-						srcset="
-						../assets/gallery/Portfolio-photographs-mobile/photography-picture04.jpg 198w,
-						../assets/gallery/Portfolio-photographs-desktop/photography-picture04.jpg        381w
-						"
-						sizes="(max-width: 1000px) 198px, 381px"
-						src="../assets/gallery/Portfolio-photographs-mobile/photography-picture04.jpg" alt="Couple on a bench under a tree">
-						<figcaption class="hidden-caption image-container__image--caption">Couple on a bench taken in Paris 14.03.2009</figcaption>
-					</figure>
-				</div>
+					<div class="image-container">
+						<img
+							src="../assets/gallery/portfolio-clip.svg"
+							alt=""
+							class="image-container__picture-clip"
+						/>
+						<figure class="image-container__image">
+							<img
+								class="image-container__image--image"
+								srcset="
+									../assets/gallery/Portfolio-photographs-mobile/photography-picture04.jpg  198w,
+									../assets/gallery/Portfolio-photographs-desktop/photography-picture04.jpg 381w
+								"
+								sizes="(max-width: 1000px) 198px, 381px"
+								src="../assets/gallery/Portfolio-photographs-mobile/photography-picture04.jpg"
+								alt="Couple on a bench under a tree"
+							/>
+							<figcaption
+								class="hidden-caption image-container__image--caption"
+							>
+								Couple on a bench taken in Paris 14.03.2009
+							</figcaption>
+						</figure>
+					</div>
 
-				<div class="image-container">
-					<img src="../assets/gallery/portfolio-clip.svg" alt="" class="image-container__picture-clip">
-					<figure class="image-container__image">
-						<img class=image-container__image--image
-						srcset="
-						../assets/gallery/Portfolio-photographs-mobile/photography-picture05.jpg 198w,
-						../assets/gallery/Portfolio-photographs-desktop/photography-picture05.jpg        381w
-						"
-						sizes="(max-width: 1000px) 198px, 381px"
-						src="../assets/gallery/Portfolio-photographs-mobile/photography-picture05.jpg" alt="Mountain tops eveloped by mist">
-						<figcaption class="hidden-caption image-container__image--caption">Mountain tops taken in Paris 20.03.2009</figcaption>
-					</figure>
-				</div>
+					<div class="image-container">
+						<img
+							src="../assets/gallery/portfolio-clip.svg"
+							alt=""
+							class="image-container__picture-clip"
+						/>
+						<figure class="image-container__image">
+							<img
+								class="image-container__image--image"
+								srcset="
+									../assets/gallery/Portfolio-photographs-mobile/photography-picture05.jpg  198w,
+									../assets/gallery/Portfolio-photographs-desktop/photography-picture05.jpg 381w
+								"
+								sizes="(max-width: 1000px) 198px, 381px"
+								src="../assets/gallery/Portfolio-photographs-mobile/photography-picture05.jpg"
+								alt="Mountain tops eveloped by mist"
+							/>
+							<figcaption
+								class="hidden-caption image-container__image--caption"
+							>
+								Mountain tops taken in Paris 20.03.2009
+							</figcaption>
+						</figure>
+					</div>
 
-				<div class="image-container">
-					<img src="../assets/gallery/portfolio-clip.svg" alt="" class="image-container__picture-clip">
-					<figure class="image-container__image">
-						<img class=image-container__image--image
-						srcset="
-						../assets/gallery/Portfolio-photographs-mobile/photography-picture06.jpg 198w,
-						../assets/gallery/Portfolio-photographs-desktop/photography-picture06.jpg        381w
-						"
-						sizes="(max-width: 1000px) 198px, 381px"
-						src="../assets/gallery/Portfolio-photographs-mobile/photography-picture06.jpg" alt="Dead tree trunk">
-						<figcaption class="hidden-caption image-container__image--caption">Tree trunk taken in Texas 24.05.2009</figcaption>
-					</figure>
-				</div>
+					<div class="image-container">
+						<img
+							src="../assets/gallery/portfolio-clip.svg"
+							alt=""
+							class="image-container__picture-clip"
+						/>
+						<figure class="image-container__image">
+							<img
+								class="image-container__image--image"
+								srcset="
+									../assets/gallery/Portfolio-photographs-mobile/photography-picture06.jpg  198w,
+									../assets/gallery/Portfolio-photographs-desktop/photography-picture06.jpg 381w
+								"
+								sizes="(max-width: 1000px) 198px, 381px"
+								src="../assets/gallery/Portfolio-photographs-mobile/photography-picture06.jpg"
+								alt="Dead tree trunk"
+							/>
+							<figcaption
+								class="hidden-caption image-container__image--caption"
+							>
+								Tree trunk taken in Texas 24.05.2009
+							</figcaption>
+						</figure>
+					</div>
 
-				<div class="image-container">
-					<img src="../assets/gallery/portfolio-clip.svg" alt="" class="image-container__picture-clip">
-					<figure class="image-container__image">
-						<img class=image-container__image--image
-						srcset="
-						../assets/gallery/Portfolio-photographs-mobile/photography-picture07.jpg 198w,
-						../assets/gallery/Portfolio-photographs-desktop/photography-picture07.jpg        381w
-						"
-						sizes="(max-width: 1000px) 198px, 381px"
-						src="../assets/gallery/Portfolio-photographs-mobile/photography-picture07.jpg" alt="Desert dunes">
-						<figcaption class="hidden-caption image-container__image--caption">Desert dunes taken in Africa 14.09.2009</figcaption>
-					</figure>
-				</div>
+					<div class="image-container">
+						<img
+							src="../assets/gallery/portfolio-clip.svg"
+							alt=""
+							class="image-container__picture-clip"
+						/>
+						<figure class="image-container__image">
+							<img
+								class="image-container__image--image"
+								srcset="
+									../assets/gallery/Portfolio-photographs-mobile/photography-picture07.jpg  198w,
+									../assets/gallery/Portfolio-photographs-desktop/photography-picture07.jpg 381w
+								"
+								sizes="(max-width: 1000px) 198px, 381px"
+								src="../assets/gallery/Portfolio-photographs-mobile/photography-picture07.jpg"
+								alt="Desert dunes"
+							/>
+							<figcaption
+								class="hidden-caption image-container__image--caption"
+							>
+								Desert dunes taken in Africa 14.09.2009
+							</figcaption>
+						</figure>
+					</div>
 
-				<div class="image-container">
-					<img src="../assets/gallery/portfolio-clip.svg" alt="" class="image-container__picture-clip--horizontal">
-					<figure class="image-container__image">
-						
-						<img class=image-container__image--image
-						srcset="
-						../assets/gallery/Portfolio-photographs-mobile/photography-picture08.jpg 255w,
-						../assets/gallery/Portfolio-photographs-desktop/photography-picture08.jpg        607w
-						"
-						sizes="(max-width: 1000px) 255px, 607px"
-						src="../assets/gallery/Portfolio-photographs-mobile/photography-picture08.jpg" alt="Ocean between two cliffs">
-						<figcaption class="hidden-caption image-container__image--caption">Ocean between cliffs taken in Africa 16.09.2009</figcaption>
-					</figure>
-				</div>
+					<div class="image-container">
+						<img
+							src="../assets/gallery/portfolio-clip.svg"
+							alt=""
+							class="image-container__picture-clip--horizontal"
+						/>
+						<figure class="image-container__image">
+							<img
+								class="image-container__image--image"
+								srcset="
+									../assets/gallery/Portfolio-photographs-mobile/photography-picture08.jpg  255w,
+									../assets/gallery/Portfolio-photographs-desktop/photography-picture08.jpg 607w
+								"
+								sizes="(max-width: 1000px) 255px, 607px"
+								src="../assets/gallery/Portfolio-photographs-mobile/photography-picture08.jpg"
+								alt="Ocean between two cliffs"
+							/>
+							<figcaption
+								class="hidden-caption image-container__image--caption"
+							>
+								Ocean between cliffs taken in Africa 16.09.2009
+							</figcaption>
+						</figure>
+					</div>
 
-				<div class="image-container">
-					<img src="../assets/gallery/portfolio-clip.svg" alt="" class="image-container__picture-clip">
-					<figure class="image-container__image">
-						<img class=image-container__image--image
-						srcset="
-						../assets/gallery/Portfolio-photographs-mobile/photography-picture09.jpg 198w,
-						../assets/gallery/Portfolio-photographs-desktop/photography-picture09.jpg        381w
-						"
-						sizes="(max-width: 1000px) 198px, 381px"
-						src="../assets/gallery/Portfolio-photographs-mobile/photography-picture09.jpg" alt="Unsteady narrow wooden bridge on the water">
-						<figcaption class="hidden-caption image-container__image--caption">Unsteady bridge taken in Kottamala 24.10.2009</figcaption>
-					</figure>
-				</div>
+					<div class="image-container">
+						<img
+							src="../assets/gallery/portfolio-clip.svg"
+							alt=""
+							class="image-container__picture-clip"
+						/>
+						<figure class="image-container__image">
+							<img
+								class="image-container__image--image"
+								srcset="
+									../assets/gallery/Portfolio-photographs-mobile/photography-picture09.jpg  198w,
+									../assets/gallery/Portfolio-photographs-desktop/photography-picture09.jpg 381w
+								"
+								sizes="(max-width: 1000px) 198px, 381px"
+								src="../assets/gallery/Portfolio-photographs-mobile/photography-picture09.jpg"
+								alt="Unsteady narrow wooden bridge on the water"
+							/>
+							<figcaption
+								class="hidden-caption image-container__image--caption"
+							>
+								Unsteady bridge taken in Kottamala 24.10.2009
+							</figcaption>
+						</figure>
+					</div>
 
-				<div class="image-container">
-					<img src="../assets/gallery/portfolio-clip.svg" alt="" class="image-container__picture-clip">
-					<figure class="image-container__image">
-						<img class=image-container__image--image
-						srcset="
-						../assets/gallery/Portfolio-photographs-mobile/photography-picture10.jpg 198w,
-						../assets/gallery/Portfolio-photographs-desktop/photography-picture10.jpg        381w
-						"
-						sizes="(max-width: 1000px) 198px, 381px"
-						src="../assets/gallery/Portfolio-photographs-mobile/photography-picture10.jpg" alt="Street in New York">
-						<figcaption class="hidden-caption image-container__image--caption">Street taken in New York 11.05.2010</figcaption>
-					</figure>
-				</div>
+					<div class="image-container">
+						<img
+							src="../assets/gallery/portfolio-clip.svg"
+							alt=""
+							class="image-container__picture-clip"
+						/>
+						<figure class="image-container__image">
+							<img
+								class="image-container__image--image"
+								srcset="
+									../assets/gallery/Portfolio-photographs-mobile/photography-picture10.jpg  198w,
+									../assets/gallery/Portfolio-photographs-desktop/photography-picture10.jpg 381w
+								"
+								sizes="(max-width: 1000px) 198px, 381px"
+								src="../assets/gallery/Portfolio-photographs-mobile/photography-picture10.jpg"
+								alt="Street in New York"
+							/>
+							<figcaption
+								class="hidden-caption image-container__image--caption"
+							>
+								Street taken in New York 11.05.2010
+							</figcaption>
+						</figure>
+					</div>
 
-				<div class="image-container">
-					<img src="../assets/gallery/portfolio-clip.svg" alt="" class="image-container__picture-clip--horizontal">
-					<figure class="image-container__image">
-						<img class=image-container__image--image
-						srcset="
-						../assets/gallery/Portfolio-photographs-mobile/photography-picture11.jpg 255w,
-						../assets/gallery/Portfolio-photographs-desktop/photography-picture11.jpg        607w
-						"
-						sizes="(max-width: 1000px) 255px, 607px"
-						src="../assets/gallery/Portfolio-photographs-mobile/photography-picture11.jpg" alt="Rainy day by the harbor">
-						<figcaption class="hidden-caption image-container__image--caption">Harbor taken in New York 11.05.2010</figcaption>
-					</figure>
-				</div>
+					<div class="image-container">
+						<img
+							src="../assets/gallery/portfolio-clip.svg"
+							alt=""
+							class="image-container__picture-clip--horizontal"
+						/>
+						<figure class="image-container__image">
+							<img
+								class="image-container__image--image"
+								srcset="
+									../assets/gallery/Portfolio-photographs-mobile/photography-picture11.jpg  255w,
+									../assets/gallery/Portfolio-photographs-desktop/photography-picture11.jpg 607w
+								"
+								sizes="(max-width: 1000px) 255px, 607px"
+								src="../assets/gallery/Portfolio-photographs-mobile/photography-picture11.jpg"
+								alt="Rainy day by the harbor"
+							/>
+							<figcaption
+								class="hidden-caption image-container__image--caption"
+							>
+								Harbor taken in New York 11.05.2010
+							</figcaption>
+						</figure>
+					</div>
 
-				<div class="button-container">
-					<a class="button-container__button button-container__button--primary" href="./about-me.html">About Me</a>
-					<a class="button-container__button button-container__button--secondary" href="mailto:dummyportfolioemail@bobsmith.com">Contact Me</a>
-
+					<div class="button-container">
+						<a
+							class="button-container__button button-container__button--primary"
+							href="./about-me.html"
+							>About Me</a
+						>
+						<a
+							aria-label="Contact by e-mail"
+							class="
+								button-container__button button-container__button--secondary
+							"
+							href="mailto:dummyportfolioemail@bobsmith.com"
+							>Contact Me</a
+						>
+					</div>
 				</div>
 			</div>
-		</div>
-	</main>
-	<script src="../js/gallery.js"></script>
-	<script src="../js/app.js"></script>
-	
-</body>
+		</main>
+		<script src="../js/gallery.js"></script>
+		<script src="../js/app.js"></script>
+	</body>
 </html>

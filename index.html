@@ -11,72 +11,45 @@
 	</head>
 	<body>
 		<header>
-			<nav
-				class="
-					nav
-					nav--background-color
-					nav--position
-					nav--flex
-					nav--size
-					nav--padding
-				"
-			>
+			<nav class="nav">
+				<img class="nav__logo" src="assets/logo.svg" alt="Shoot logo" />
+
 				<img
-					class="nav__logo nav__logo--padding"
-					src="assets/logo.svg"
-					alt="Shoot logo"
-				/>
-				<img
-					class="
-						nav__close-hamburger-menu
-						nav__close-hamburger-menu--pointer
-						nav__close-hamburger-menu--position
-						hidden
-					"
+					aria-label="Close Navigation"
+					class="nav__close-hamburger-menu hidden"
 					src="assets/mobile/Hamburger menu close.svg"
-					alt="Close menu"
-				/>
-				<img
-					class="nav__hamburger-menu nav__hamburger-menu--pointer"
-					src="assets/mobile/Hamburger menu.svg"
-					alt="nav menu"
+					alt="Close nav menu"
 				/>
 
-				<ul
-					class="
-						nav__menu
-						nav__menu--position
-						nav__menu--flex
-						nav__menu--size
-						nav__menu--text
-						nav__menu--padding
-						nav__menu--spacing
-						hidden
-					"
-				>
+				<img
+					aria-label="Open Navigation"
+					class="nav__hamburger-menu"
+					src="assets/mobile/Hamburger menu.svg"
+					alt="Open nav menu"
+				/>
+
+				<ul class="nav__menu hidden">
 					<li class="nav__menu-item">
 						<a
-							class=" nav__menu-item-link--current nav__menu-item-link--text"
+							class="nav__menu-item--link nav__menu-item--current-link"
 							href="#home"
 							>HOME</a
 						>
 					</li>
 					<li class="nav__menu-item">
-						<a class="nav__menu-item-link nav__menu-item-link--text"
-							href="pages/gallery.html">
+						<a class="nav__menu-item--link" href="pages/gallery.html">
 							GALLERY
-							</a>
+						</a>
 					</li>
 					<li class="nav__menu-item">
-						<a
-							class="nav__menu-item-link nav__menu-item-link--text"
-							href="pages/about-me.html"
+						<a class="nav__menu-item--link" href="pages/about-me.html"
 							>ABOUT ME</a
 						>
 					</li>
 					<li class="nav__menu-item">
 						<a
-							class="nav__menu-item-link nav__menu-item-link--text"
+							aria-label="Contact by e-mail"
+							class="nav__menu-item--link"
 							href="mailto:dummyportfolioemail@bobsmith.com"
 							>CONTACT</a
 						>
@@ -133,6 +106,7 @@
 					>See My Work</a
 				>
 				<a
+					aria-label="Contact by e-mail"
 					class="
 						main__content-button--shared-styles main__content-secondary-button
 					"
@@ -152,6 +126,5 @@
 			</section>
 		</main>
 		<script src="js/app.js"></script>
-		
 	</body>
 </html>
