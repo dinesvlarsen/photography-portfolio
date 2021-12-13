@@ -40,11 +40,14 @@
 	text-align: center;
 	padding: 0.8em 2em;
 	border-radius: 2px;
+	text-decoration: underline;
 }
 
 .about-me__primary-button {
 	background-color: var(--button-primary-background);
 	color: var(--button-primary-color);
+	text-decoration-color: var(--primary-color);
+	transition: background-color 300ms, text-decoration-color 300ms;
 }
 
 .about-me__secondary-button {
@@ -52,6 +55,8 @@
 	color: var(--button-secondary-color);
 	box-shadow: inset 0px 0px 0px 2px #080808;
 	margin-top: 1rem;
+	text-decoration-color: #fafafa;
+	transition: background-color 300ms, text-decoration-color 300ms;
 }
 
 .about-me__button:active {
@@ -75,11 +80,13 @@
 .about-me__primary-button:hover {
 	background-color: var(--button-primary-background-hover);
 	color: var(--button-primary-color-hover);
+	text-decoration-color: var(--button-primary-color-hover);
 }
 
 .about-me__secondary-button:hover {
 	background-color: var(--button-secondary-background-hover);
 	color: var(button-secondary-color-hover);
+	text-decoration-color: var(--button-secondary-color-hover);
 }
 
 @media only screen and (min-width: 640px) {

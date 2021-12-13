@@ -35,7 +35,6 @@
 	border-radius: 2px;
 	margin-bottom: 1rem;
 	box-shadow: var(--button-shadow);
-	/* transition: background-color 300ms; */
 	text-decoration: underline;
 }
 
@@ -150,7 +149,7 @@
 	}
 
 	.main__about-me {
-		margin-left: 4rem;
+		margin-left: 3.8rem;
 	}
 }
 
