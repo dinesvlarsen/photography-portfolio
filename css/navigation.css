@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+	background-color: #f5f5f5;
+	font-family: 'Roboto', sans-serif;
+}
+
+main {
+	animation: fadeInAnimation ease 500ms;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+/* Navigation */
+.nav {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	justify-content: space-between;
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 14px 6px;
+	background-color: #f5f5f5;
+}
+
+.nav__close-hamburger {
+	position: relative;
+	right: 4px;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.nav__close-hamburger,
+.nav__hamburger,
+.nav__logo {
+	cursor: pointer;
+	padding: 10px;
+}
+
+.nav__menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 8rem;
+	width: 100vw;
+	height: 100vh;
+	margin-top: 3rem;
+}
+
+.nav__menu-item + .nav__menu-item {
+	margin-top: 2rem;
+}
+
+.nav__link {
+	text-decoration: underline;
+	transition: color 300ms, text-decoration-color 300ms;
+}
+
+.nav__link:hover {
+	color: #949494;
+	/* text-decoration: none; */
+	text-decoration-color: #f5f5f5;
+}
+
+.nav__link--current {
+	color: #616161;
+	text-decoration: none;
+}
+
+.nav__link--current:hover {
+	cursor: default;
+}
+
+.nav--hidden {
+	display: none;
+}
+
+@media only screen and (min-width: 700px) {
+	/* NAVIGATION */
+	.nav {
+		padding: 20px 32px;
+	}
+
+	.nav__menu-item-link--text {
+		font-size: 1.2rem;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	/* NAVIGATION */
+	.nav--hidden {
+		display: inline-block;
+	}
+
+	.nav {
+		padding: inherit 0;
+	}
+
+	.nav__close-hamburger,
+	.nav__hamburger {
+		display: none;
+	}
+
+	.nav__menu {
+		position: relative;
+		top: none;
+		left: none;
+		padding: 0;
+		margin: 0;
+		height: inherit;
+		width: none;
+		text-align: right;
+	}
+
+	.nav__menu-item {
+		display: inline-block;
+	}
+
+	.nav__link {
+		font-size: 1rem;
+	}
+
+	.nav__menu-item + .nav__menu-item {
+		margin: 1rem 0 0 4rem;
+	}
+}

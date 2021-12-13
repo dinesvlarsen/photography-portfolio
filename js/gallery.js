@@ -6,7 +6,7 @@ scrollContainer.addEventListener('wheel', event => {
 })
 
 /* GALLERY FIGCAPTION */
-const galleryImages = document.querySelectorAll(".image-container__image");
+const galleryImages = document.querySelectorAll(".gallery__photograph-container");
 
 const images = [...galleryImages];
 images.forEach(image => image.addEventListener('click', toggleCaption))
@@ -14,5 +14,5 @@ images.forEach(image => image.addEventListener('click', toggleCaption))
 function toggleCaption(event) {
 
 	if (event.target.parentElement.children[1].tagName !== "FIGCAPTION") return;
-	event.target.parentElement.children[1].classList.toggle('hidden-caption');
+	event.target.parentElement.children[1].classList.toggle('gallery__caption--hidden');
 }

@@ -1,0 +1,170 @@
+.main {
+	max-width: 1440px;
+	margin: 0 auto;
+	width: 100%;
+	margin-top: 5rem;
+	padding: 0 16px;
+}
+
+/* Hero image */
+.main__hero-image {
+	width: 100%;
+	height: auto;
+}
+
+/* Headings */
+.main__content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main__heading {
+	font-size: 2.2rem;
+	margin-top: 1rem;
+}
+
+.main__subheader {
+	font-size: 1.1rem;
+	margin-bottom: 1rem;
+}
+
+/* Buttons (and link) */
+/* Shared button styles */
+.main__buttons {
+	border-radius: 2px;
+	margin-bottom: 1rem;
+	box-shadow: var(--button-shadow);
+	/* transition: background-color 300ms; */
+	text-decoration: underline;
+}
+
+.main__buttons:hover {
+	text-decoration: underline;
+}
+/* Primary button */
+.main__primary-button {
+	color: var(--text-on-dark);
+	background-color: var(--primary-color);
+	text-decoration-color: var(--primary-color);
+	padding: 0.65em 2.5em;
+	transition: background-color 300ms, text-decoration-color 300ms;
+}
+
+.main__primary-button:hover {
+	background-color: #616161;
+	color: #f5f5f5;
+}
+
+/* Secondary button */
+.main__secondary-button {
+	color: var(--primary-color);
+	background-color: #fafafa;
+	text-decoration-color: #fafafa;
+	padding: 0.65em 2.71em;
+	box-shadow: inset 0px 0px 0px 1px #080808;
+	transition: background-color 300ms, text-decoration-color 300ms;
+}
+
+.main__secondary-button:hover {
+	background-color: #e8e8e8;
+	color: #383838;
+	box-shadow: inset 0px 0px 0px 1px #1d1d1d;
+}
+
+/* About me link */
+.main__about-me {
+	text-decoration: underline;
+	margin-bottom: 2rem;
+	transition: color 300ms, text-decoration-color 300ms;
+}
+
+.main__about-me:hover {
+	color: #949494;
+	/* text-decoration: none; */
+	text-decoration-color: #f5f5f5;
+}
+
+/* MEDIA QUERIES */
+@media only screen and (min-width: 700px) {
+	/* MAIN CONTENT */
+	.main {
+		margin-top: 7rem;
+	}
+	.main__hero-container {
+		display: flex;
+		justify-content: center;
+	}
+	.main__hero-image {
+		width: 80%;
+	}
+
+	.main__content {
+		margin-left: 3rem;
+	}
+
+	.main__heading {
+		font-size: 3rem;
+	}
+
+	.main__subheader {
+		font-size: 1.5rem;
+	}
+
+	.main__primary-button,
+	.main__secondary-button,
+	.main__about-me {
+		font-size: 1.2rem;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	/* MAIN CONTENT */
+	.main {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 10rem;
+	}
+
+	.main__hero {
+		width: 80%;
+	}
+
+	.main__content {
+		position: relative;
+		right: 60px;
+		bottom: 15px;
+		margin-top: 5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		width: 40%;
+	}
+
+	.main__heading {
+		font-size: 3.5rem;
+	}
+
+	.main__subheader {
+		margin-bottom: 2rem;
+	}
+
+	.main__about-me {
+		margin-left: 4rem;
+	}
+}
+
+@media only screen and (min-width: 1346px) {
+	.main__hero-image {
+		width: 90%;
+	}
+
+	.main__content {
+		position: relative;
+		right: 5px;
+		bottom: 10px;
+		width: 34%;
+		font-size: 4rem;
+		margin-top: 7rem;
+	}
+} ;

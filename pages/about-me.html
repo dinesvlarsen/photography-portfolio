@@ -7,7 +7,7 @@
 		<title>About Bob Smith</title>
 		<link rel="stylesheet" href="../css/reset.css" />
 		<link rel="stylesheet" href="../css/variables.css" />
-		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../css/navigation.css" />
 		<link rel="stylesheet" href="../css/about-me.css" />
 	</head>
 	<body>
@@ -16,38 +16,40 @@
 				<a href="../index.html">
 					<img class="nav__logo" src="../assets/logo.svg" alt="Shoot logo" />
 				</a>
+
 				<img
 					aria-label="Close Navigation"
-					class="nav__close-hamburger-menu hidden"
+					class="nav__close-hamburger nav--hidden"
 					src="../assets/mobile/Hamburger menu close.svg"
 					alt="Close menu"
 				/>
+
 				<img
 					aria-label="Open Navigation"
-					class="nav__hamburger-menu"
+					class="nav__hamburger"
 					src="../assets/mobile/Hamburger menu.svg"
 					alt="nav menu"
 				/>
 
-				<ul class="nav__menu hidden">
+				<ul class="nav__menu nav--hidden">
 					<li class="nav__menu-item">
-						<a class="nav__menu-item--link" href="../index.html">HOME </a>
+						<a class="nav__link" href="../index.html">HOME </a>
 					</li>
 
 					<li class="nav__menu-item">
-						<a class="nav__menu-item--link" href="./gallery.html">GALLERY </a>
+						<a class="nav__link" href="./gallery.html">GALLERY </a>
 					</li>
+
 					<li class="nav__menu-item">
-						<a
-							class="nav__menu-item--link nav__menu-item--current-link"
-							href="#about-me"
+						<a class="nav__link nav__link--current" href="#about-me"
 							>ABOUT ME
 						</a>
 					</li>
+
 					<li class="nav__menu-item">
 						<a
 							aria-label="Contact by e-mail"
-							class="nav__menu-item--link"
+							class="nav__link"
 							href="mailto:dummyportfolioemail@bobsmith.com"
 						>
 							CONTACT
@@ -57,9 +59,9 @@
 			</nav>
 		</header>
 		<main class="about-me">
-			<figure class="about-me__figure">
+			<figure>
 				<img
-					class="about-me__figure--image"
+					class="about-me__portrait"
 					srcset="
 						../assets/mobile/photos/about-me-portrait-mobile.png 288w,
 						../assets/desktop/about-me-portrait-desktop.png      574w
@@ -70,22 +72,23 @@
 				/>
 			</figure>
 
-			<div class="about-me__right-section">
+			<div class="about-me__content">
 				<article class="about-me__article">
-					<h1 class="about-me__article--header">About Bob Smith</h1>
-					<p class="about-me__article--paragraph">
+					<h1 class="about-me__header">About Bob Smith</h1>
+					<p class="about-me__paragraph">
 						Bobs journey is of a personal nature, her work explores sick ass
 						photography.
 					</p>
 
-					<p class="about-me__article--paragraph">
+					<p class="about-me__paragraph">
 						Her main photographic focus is self-portraiture, starting out simply
 						through curiosity. Capturing self-portraits has become a major part
 						of her life & work; it has enabled her to overcome anxiety and fears
 						over life & mortality. Using the photographic practice as a calming
 						mechanism, and a form of escapism.
 					</p>
-					<p class="about-me__article--paragraph">
+
+					<p class="about-me__paragraph">
 						Bob works predominantly with analog and instant cameras. Her process
 						involves her in every stage of development making Leannes work
 						deeply personal. The aesthetic of shooting film plays a major part
@@ -98,19 +101,20 @@
 
 				<div class="about-me__buttons-container">
 					<a
-						class="about-me__button about-me__button--primary"
+						class="about-me__primary-button about-me__buttons"
 						href="./gallery.html"
 						>See My Work</a
 					>
+
 					<a
 						aria-label="Contact by e-mail"
-						class="about-me__button about-me__button--secondary"
+						class="about-me__secondary-button about-me__buttons"
 						href="mailto:dummyportfolioemail@bobsmith.com"
 						>Contact Me</a
 					>
 				</div>
 			</div>
 		</main>
-		<script src="../js/app.js"></script>
+		<script src="../js/hamburger-menu.js"></script>
 	</body>
 </html>
